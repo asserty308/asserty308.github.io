@@ -70787,7 +70787,7 @@ $2(a,b){return B.Gd},
 $S:448}
 A.Ez.prototype={
 I(a){var s=A.aiT(null,A.ap3(B.N,B.FT),!0)
-return new A.p0($.anW(),"Flutter Demo",s,!1,null)}}
+return new A.p0($.anW(),"Sudoku",s,!1,null)}}
 A.u2.prototype={
 ah(){return new A.K6(new A.hZ(),B.k)}}
 A.K6.prototype={
