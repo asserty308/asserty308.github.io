@@ -26,18 +26,25 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.project {
-    margin-bottom: 20px;
-    padding: 20px;
+.projects a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.project div {
+    padding: 16px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.project a {
+.project h3 {
     font-size: large;
-    color: black;
-    text-decoration: none;
+}
+
+.project p {
+    padding: 8px;
 }
 
 .contact {
