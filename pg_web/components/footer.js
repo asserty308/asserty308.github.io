@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="footer-content">
             <div class="contact-info">
                 <h4>Kontakt</h4>
-                <p>P+G Haustechnik Kanalservice</p>
-                <p>Tel: +49 (0) 173 7502986</p>
+                <p>P&G Haustechnik Kanalservice</p>
+                <p>Tel: +49 (0) XXX XXXXXXX</p>
                 <p>Email: info@pg-haustechnik.de</p>
             </div>
             <div class="footer-links">
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; ${new Date().getFullYear()} P+G Haustechnik Kanalservice. Alle Rechte vorbehalten.</p>
+            <p>&copy; ${new Date().getFullYear()} P&G Haustechnik Kanalservice. Alle Rechte vorbehalten.</p>
         </div>
     `;
 
