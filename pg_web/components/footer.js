@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>P&G Haustechnik Kanalservice</p>
                 <p>Steinsstr. 27</p>
                 <p>41238 Mönchengladbach</p>
-                <p>Tel: +49 (0) 173 7502986</p>
-                <p>Email: anfrage@pg-kanalservice.de</p>
+                <p>Tel: <a href="tel:+4917375029869">+49 (0) 173 7502986</a></p>
+                <p>Email: <a href="mailto:anfrage@pg-kanalservice.de">anfrage@pg-kanalservice.de</a></p>
             </div>
             <div class="footer-links">
                 <a href="imprint.html">Impressum</a>
