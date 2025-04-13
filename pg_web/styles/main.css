@@ -114,39 +114,35 @@ main {
 
 /* Services Section */
 .services {
-    max-width: 100%;
-    margin: 4rem 0;
-    padding: 0;
-}
-
-.services-slider {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* IE and Edge */
+    margin: 4rem auto;
     padding: 0 2rem;
 }
 
-.services-slider h2 {
+.services h2 {
     margin-bottom: 2rem;
-    max-width: calc(1200px - 4rem);
+    text-align: left;
+}
+
+.services-slider {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .services-slider::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari and Opera */
 }
 
 .service-grid {
     display: flex;
     gap: 2rem;
-    margin: 0;
+    padding: 0 2rem;
+    margin: 0 auto;
     width: max-content;
-    max-width: none;
-    padding: 1rem 0;
 }
 
 .service-card {
