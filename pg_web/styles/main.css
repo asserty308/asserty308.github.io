@@ -51,15 +51,15 @@ nav {
     cursor: pointer;
     background: none;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem;
     z-index: 1001;
 }
 
 .hamburger span {
     display: block;
-    width: 25px;
+    width: 30px;
     height: 3px;
-    margin: 5px 0;
+    margin: 6px 0;
     background: var(--primary-color);
     transition: all 0.3s ease;
 }
@@ -276,31 +276,16 @@ footer {
     nav {
         justify-content: space-between;
         padding: 1rem;
-        flex-direction: row;
-        text-align: left;
-        position: relative;
-    }
-
-    .logo {
-        margin-right: 3rem;
     }
 
     .hamburger {
         display: block;
-        position: absolute;
-        right: 1rem;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .hamburger span {
-        width: 30px;
-        height: 3px;
-        margin: 6px 0;
+        position: relative;
+        margin-left: auto;
     }
 
     .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(8px, 8px);
     }
 
     .hamburger.active span:nth-child(2) {
@@ -308,7 +293,7 @@ footer {
     }
 
     .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
+        transform: rotate(-45deg) translate(7px, -7px);
     }
 
     .nav-menu {
