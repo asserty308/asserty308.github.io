@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="contact-info">
                 <h4>Kontakt</h4>
                 <p>P&G Haustechnik Kanalservice</p>
-                <p>Tel: +49 (0) XXX XXXXXXX</p>
-                <p>Email: info@pg-haustechnik.de</p>
+                <p>Tel: +49 (0) 173 7502986</p>
+                <p>Email: anfrage@pg-kanalservice.de</p>
             </div>
             <div class="footer-links">
                 <a href="imprint.html">Impressum</a>

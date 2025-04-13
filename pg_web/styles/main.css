@@ -31,6 +31,7 @@ header {
 }
 
 nav {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
@@ -45,24 +46,46 @@ nav {
     color: var(--primary-color);
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 1rem;
+    z-index: 1001;
 }
 
-nav ul li {
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
     margin-left: 2rem;
 }
 
-nav ul li a {
+.nav-menu li a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s;
+    display: block;
+    padding: 0.5rem 0;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+.nav-menu li a:hover,
+.nav-menu li a.active {
     color: var(--primary-color);
 }
 
@@ -251,17 +274,72 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
+        justify-content: space-between;
+        padding: 1rem;
+        flex-direction: row;
+        text-align: left;
+        position: relative;
+    }
+
+    .logo {
+        margin-right: 3rem;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        margin: 6px 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
         flex-direction: column;
+        background-color: var(--white);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 0;
         text-align: center;
+        border-top: 1px solid var(--light-gray);
     }
 
-    nav ul {
-        margin-top: 1rem;
-        flex-direction: column;
+    .nav-menu li:first-child {
+        border-top: none;
     }
 
-    nav ul li {
-        margin: 0.5rem 0;
+    .nav-menu li a {
+        padding: 1rem;
+        width: 100%;
     }
 
     .hero h1,
