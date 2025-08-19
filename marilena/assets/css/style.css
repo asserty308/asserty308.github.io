@@ -121,6 +121,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    position: relative;
+    /* For absolute positioning of dropdown */
 }
 
 .logo {
@@ -133,6 +137,8 @@ header {
 /* Navigation */
 .nav-toggle {
     display: none;
+    margin-left: auto;
+    /* Push the toggle button to the right */
 }
 
 .nav-menu {
@@ -371,6 +377,17 @@ footer {
         font-size: 1.5rem;
         color: var(--primary-color);
         cursor: pointer;
+        margin-left: auto;
+        /* Ensure it stays on the right */
+        padding-right: 0;
+        /* Remove any right padding */
+    }
+
+    nav {
+        order: 3;
+        /* Ensure nav comes after the toggle button in the flex order */
+        flex-basis: 100%;
+        /* On mobile, nav takes full width when visible */
     }
 
     .nav-menu {
@@ -383,6 +400,8 @@ footer {
         padding: var(--spacing-md);
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         flex-direction: column;
+        z-index: 1000;
+        /* Ensure menu appears above content */
     }
 
     .nav-menu.active {
