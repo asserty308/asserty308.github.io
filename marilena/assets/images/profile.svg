@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#6b9080"/>
+  <circle cx="400" cy="300" r="200" fill="#cce3de"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="36" fill="#ffffff" text-anchor="middle">Profile Image</text>
+  <text x="50%" y="58%" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">(Replace with an actual profile photo)</text>
+</svg>

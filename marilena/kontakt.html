@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Marilena Achtsamkeitstraining</title>
+    <meta name="description"
+        content="Nehmen Sie Kontakt zu mir auf für Fragen zu Achtsamkeitskursen oder Terminvereinbarungen. Ich freue mich auf Ihre Nachricht.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Page-specific styles */
+        .contact-container {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-form-container {
+            flex: 1;
+        }
+
+        .info-item {
+            margin-bottom: var(--spacing-md);
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-right: var(--spacing-sm);
+            margin-top: 4px;
+        }
+
+        .info-text {
+            flex: 1;
+        }
+
+        .info-text strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .map-container {
+            margin-top: var(--spacing-md);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Marilena</a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="ueber-mich.html">Über mich</a></li>
+                    <li><a href="angebote.html">Angebote</a></li>
+                    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Kontakt</h1>
+            <p>Ich freue mich auf Ihre Nachricht</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nehmen Sie Kontakt auf</h2>
+                <p>Haben Sie Fragen zu meinen Angeboten oder möchten Sie sich für einen Kurs anmelden? Schreiben Sie mir
+                    eine Nachricht oder rufen Sie mich an. Ich freue mich darauf, von Ihnen zu hören.</p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Kontaktinformationen</h3>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-text">
+                            <strong>Adresse</strong>
+                            Zentrum für Achtsamkeit<br>
+                            Musterstraße 123<br>
+                            12345 Musterstadt
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-text">
+                            <strong>Telefon</strong>
+                            <a href="tel:+491234567890">+49 (0) 123 456 7890</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-text">
+                            <strong>E-Mail</strong>
+                            <a href="mailto:info@marilena-achtsamkeit.de">info@marilena-achtsamkeit.de</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="info-text">
+                            <strong>Sprechzeiten</strong>
+                            Montag - Freitag: 9:00 - 17:00 Uhr<br>
+                            Termine nach Vereinbarung
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <!-- This is a placeholder for the map. In a real website, you would replace this with an actual Google Maps embed or similar service -->
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=8.651123046875,49.36730780492121,8.769912719726562,49.42588704945211&amp;layer=mapnik"
+                            title="Standortkarte"></iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3>Schreiben Sie mir</h3>
+
+                    <!-- Form that works with GitHub Pages (using Formspree) -->
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-formspree-id"
+                        method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Betreff *</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nachricht *</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="data-consent" name="data-consent" required>
+                            <label for="data-consent">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="#"
+                                    target="_blank">Datenschutzerklärung</a> zu. *</label>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn">Nachricht senden</button>
+                        </div>
+                    </form>
+
+                    <!-- Alternative contact method for browsers without JavaScript -->
+                    <noscript>
+                        <div style="text-align: center; margin-top: var(--spacing-md);">
+                            <p>Das Kontaktformular benötigt JavaScript. Alternativ können Sie mich auch direkt per
+                                E-Mail kontaktieren:</p>
+                            <a href="mailto:info@marilena-achtsamkeit.de" class="btn">E-Mail senden</a>
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Newsletter</h2>
+                <p>Melden Sie sich für meinen Newsletter an und erhalten Sie regelmäßig Informationen zu neuen Kursen,
+                    Übungstipps und Inspirationen für Ihre Achtsamkeitspraxis.</p>
+            </div>
+
+            <!-- Simple newsletter form -->
+            <form class="contact-form" style="max-width: 500px; margin: 0 auto;"
+                action="https://formspree.io/f/your-formspree-id" method="POST">
+                <div class="form-group">
+                    <label for="newsletter-name">Name</label>
+                    <input type="text" id="newsletter-name" name="newsletter-name" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="newsletter-email">E-Mail *</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="newsletter-consent" name="newsletter-consent" required>
+                    <label for="newsletter-consent">Ich stimme zu, regelmäßig Informationen über Angebote und Themen
+                        rund um Achtsamkeit zu erhalten. Ich kann mich jederzeit wieder abmelden. *</label>
+                </div>
+
+                <div style="text-align: center;">
+                    <button type="submit" class="btn">Anmelden</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Marilena Achtsamkeitstraining. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Form validation and submission
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contact-form');
+
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    // You can add custom validation here if needed
+                    // For a GitHub Pages site, this form would typically use a service like Formspree
+
+                    // If you're not using a form service, you can use this to create a mailto link
+                    // e.preventDefault();
+                    // const name = document.getElementById('name').value;
+                    // const email = document.getElementById('email').value;
+                    // const subject = document.getElementById('subject').value;
+                    // const message = document.getElementById('message').value;
+                    // const mailtoLink = `mailto:info@marilena-achtsamkeit.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+                    // window.location.href = mailtoLink;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

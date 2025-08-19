@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angebote | Marilena Achtsamkeitstraining</title>
+    <meta name="description"
+        content="Entdecken Sie meine Achtsamkeitskurse, Workshops und Einzelcoachings für mehr Gelassenheit und innere Ruhe im Alltag.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Page-specific styles */
+        .offering {
+            margin-bottom: var(--spacing-xl);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        .offering:last-child {
+            border-bottom: none;
+        }
+
+        .offering-content {
+            display: flex;
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-md);
+        }
+
+        .offering-info {
+            flex: 2;
+        }
+
+        .offering-details {
+            flex: 1;
+            background-color: var(--section-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+        }
+
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .details-list li {
+            display: flex;
+            margin-bottom: var(--spacing-xs);
+            align-items: flex-start;
+        }
+
+        .details-list i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+        .accordion {
+            margin-top: var(--spacing-md);
+        }
+
+        .accordion-item {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .accordion-header {
+            background-color: var(--accent-color);
+            padding: var(--spacing-sm);
+            cursor: pointer;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .accordion-header h4 {
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .accordion-content {
+            padding: var(--spacing-sm);
+            display: none;
+            border: 1px solid var(--accent-color);
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+        }
+
+        .accordion-content.active {
+            display: block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .offering-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Marilena</a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="ueber-mich.html">Über mich</a></li>
+                    <li><a href="angebote.html" class="active">Angebote</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Meine Angebote</h1>
+            <p>Achtsamkeitskurse, Workshops und individuelle Begleitung</p>
+        </div>
+    </section>
+
+    <!-- Offerings Introduction -->
+    <section id="offerings-intro">
+        <div class="container">
+            <div class="section-title">
+                <h2>Wege zu mehr Achtsamkeit</h2>
+                <p>Ich biete verschiedene Formate an, damit Sie den für Sie passenden Zugang zur Achtsamkeit finden
+                    können. Von strukturierten Kursen über kompakte Workshops bis hin zu individueller Begleitung – alle
+                    Angebote basieren auf wissenschaftlich fundierten Methoden und meiner langjährigen Erfahrung.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offerings Section -->
+    <section id="offerings" class="section-bg">
+        <div class="container">
+            <!-- MBSR Course -->
+            <div id="mbsr" class="offering">
+                <h2>MBSR-Kurs: Stressbewältigung durch Achtsamkeit</h2>
+                <div class="offering-content">
+                    <div class="offering-info">
+                        <p>Das 8-Wochen-Programm MBSR (Mindfulness-Based Stress Reduction) wurde von Prof. Jon
+                            Kabat-Zinn entwickelt und ist eines der weltweit am besten erforschten
+                            Achtsamkeitsprogramme. Der Kurs vermittelt systematisch Methoden, um Stress abzubauen und
+                            gelassener mit Herausforderungen umzugehen.</p>
+
+                        <h3>Kursinhalt:</h3>
+                        <p>In acht wöchentlichen Gruppensitzungen (je 2,5 Stunden) und einem Achtsamkeitstag erlernen
+                            und üben Sie:</p>
+                        <ul style="margin-bottom: var(--spacing-md); padding-left: var(--spacing-md);">
+                            <li>Verschiedene Formen der Achtsamkeitsmeditation (Body Scan, Sitzmeditation, achtsame
+                                Körperarbeit)</li>
+                            <li>Achtsamkeit im Alltag und in der Kommunikation</li>
+                            <li>Den bewussten Umgang mit Stress, schwierigen Emotionen und Gedankenmustern</li>
+                            <li>Selbstfürsorge und wohlwollende Akzeptanz</li>
+                        </ul>
+
+                        <p>Ein wesentlicher Bestandteil des Kurses ist die tägliche Übungspraxis zu Hause (ca. 30-45
+                            Minuten). Hierfür erhalten Sie Audiodateien und Kursmaterialien.</p>
+
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Was MBSR für Sie tun kann</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Zahlreiche wissenschaftliche Studien belegen die positiven Wirkungen von MBSR:
+                                    </p>
+                                    <ul>
+                                        <li>Reduzierung von Stress und stressbedingten Beschwerden</li>
+                                        <li>Besserer Umgang mit chronischen Schmerzen und Erkrankungen</li>
+                                        <li>Stärkung der Selbstwahrnehmung und Selbstfürsorge</li>
+                                        <li>Verbesserung der Konzentration und Aufmerksamkeit</li>
+                                        <li>Förderung von emotionalem Wohlbefinden und Gelassenheit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offering-details">
+                        <h3>Auf einen Blick</h3>
+                        <ul class="details-list">
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Dauer:</strong><br>
+                                    8 wöchentliche Treffen à 2,5h<br>
+                                    plus 1 Achtsamkeitstag (6h)
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-friends"></i>
+                                <div>
+                                    <strong>Gruppengröße:</strong><br>
+                                    6-12 Teilnehmende
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Ort:</strong><br>
+                                    Zentrum für Achtsamkeit,<br>
+                                    Musterstraße 123, 12345 Musterstadt<br>
+                                    (oder online via Zoom)
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-euro-sign"></i>
+                                <div>
+                                    <strong>Investition:</strong><br>
+                                    380 Euro inkl. Kursmaterialien<br>
+                                    (Ratenzahlung möglich)
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-info-circle"></i>
+                                <div>
+                                    <strong>Hinweis:</strong><br>
+                                    Viele Krankenkassen beteiligen sich an den Kosten
+                                </div>
+                            </li>
+                        </ul>
+                        <div style="text-align: center; margin-top: var(--spacing-md);">
+                            <a href="kontakt.html" class="btn">Anmelden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stress Workshop -->
+            <div id="stress" class="offering">
+                <h2>Workshop: Achtsamer Umgang mit Stress</h2>
+                <div class="offering-content">
+                    <div class="offering-info">
+                        <p>Dieser Tagesworkshop bietet Ihnen eine kompakte Einführung in achtsame Methoden zur
+                            Stressbewältigung. Sie lernen, Stresssignale frühzeitig zu erkennen und entwickeln wirksame
+                            Strategien, um in herausfordernden Situationen gelassener zu reagieren.</p>
+
+                        <h3>Workshopinhalte:</h3>
+                        <ul style="margin-bottom: var(--spacing-md); padding-left: var(--spacing-md);">
+                            <li>Verstehen der körperlichen und mentalen Stressreaktionen</li>
+                            <li>Erlernen von Achtsamkeitsübungen zur Stressreduktion</li>
+                            <li>Bewusster Umgang mit stressverstärkenden Gedanken</li>
+                            <li>Entwicklung eines persönlichen "Notfallkoffers" für akute Stresssituationen</li>
+                            <li>Strategien für mehr Gelassenheit im Alltag</li>
+                        </ul>
+
+                        <p>Der Workshop kombiniert Wissensvermittlung, praktische Übungen und Austausch in der Gruppe.
+                            Die erlernten Techniken können Sie direkt in Ihren Alltag integrieren. Nach dem Workshop
+                            erhalten Sie begleitende Materialien zum Weiterpraktizieren.</p>
+
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Für wen ist dieser Workshop geeignet?</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>Dieser Workshop ist ideal für:</p>
+                                    <ul>
+                                        <li>Menschen, die beruflich oder privat unter Stress stehen</li>
+                                        <li>Personen, die erste Erfahrungen mit Achtsamkeit sammeln möchten</li>
+                                        <li>Alle, die nach praktischen Werkzeugen für mehr Gelassenheit suchen</li>
+                                        <li>Teilnehmende, die wenig Zeit haben und eine kompakte Einführung wünschen
+                                        </li>
+                                    </ul>
+                                    <p>Keine Vorkenntnisse erforderlich!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offering-details">
+                        <h3>Auf einen Blick</h3>
+                        <ul class="details-list">
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Dauer:</strong><br>
+                                    1 Tag (10:00 - 17:00 Uhr)
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-user-friends"></i>
+                                <div>
+                                    <strong>Gruppengröße:</strong><br>
+                                    8-15 Teilnehmende
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Ort:</strong><br>
+                                    Zentrum für Achtsamkeit,<br>
+                                    Musterstraße 123, 12345 Musterstadt
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-euro-sign"></i>
+                                <div>
+                                    <strong>Investition:</strong><br>
+                                    120 Euro inkl. Materialien<br>
+                                    und Verpflegung
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-business-time"></i>
+                                <div>
+                                    <strong>Firmenbuchungen:</strong><br>
+                                    Auch als Inhouse-Workshop für<br>
+                                    Teams buchbar
+                                </div>
+                            </li>
+                        </ul>
+                        <div style="text-align: center; margin-top: var(--spacing-md);">
+                            <a href="kontakt.html" class="btn">Anmelden</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Individual Coaching -->
+            <div id="coaching" class="offering">
+                <h2>Individuelles Achtsamkeitscoaching</h2>
+                <div class="offering-content">
+                    <div class="offering-info">
+                        <p>Im Einzelcoaching biete ich eine auf Ihre persönlichen Bedürfnisse abgestimmte Begleitung auf
+                            Ihrem Weg zu mehr Achtsamkeit. Ob Sie bereits Erfahrung haben oder ganz am Anfang stehen –
+                            wir entwickeln gemeinsam ein individuelles Programm, das zu Ihrer Lebenssituation passt.</p>
+
+                        <h3>Mögliche Schwerpunkte:</h3>
+                        <ul style="margin-bottom: var(--spacing-md); padding-left: var(--spacing-md);">
+                            <li>Einführung in grundlegende Achtsamkeitspraktiken</li>
+                            <li>Umgang mit spezifischen Herausforderungen (z.B. Stress, Schlafprobleme, Grübeln)</li>
+                            <li>Vertiefung bestehender Achtsamkeitspraxis</li>
+                            <li>Integration von Achtsamkeit in berufliche Kontexte</li>
+                            <li>Achtsame Kommunikation und Beziehungsgestaltung</li>
+                        </ul>
+
+                        <p>Nach einem kostenlosen Erstgespräch, in dem wir Ihre Ziele und Bedürfnisse klären, entwickle
+                            ich ein maßgeschneidertes Konzept für Ihre individuelle Begleitung. Die Sitzungen können
+                            persönlich oder online stattfinden.</p>
+
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4>Vorteile des Einzelcoachings</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li>Individuell auf Ihre Bedürfnisse und Zeitplanung abgestimmt</li>
+                                        <li>Persönliche Begleitung und direkte Rückmeldung</li>
+                                        <li>Vertraulicher Rahmen für sensible Themen</li>
+                                        <li>Flexible Termine und Formate (persönlich oder online)</li>
+                                        <li>Gezielte Arbeit an Ihren spezifischen Herausforderungen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="offering-details">
+                        <h3>Auf einen Blick</h3>
+                        <ul class="details-list">
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Format:</strong><br>
+                                    Einzelsitzungen à 60-90 Min.<br>
+                                    Anzahl nach Bedarf
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Ort:</strong><br>
+                                    Zentrum für Achtsamkeit,<br>
+                                    Musterstraße 123, 12345 Musterstadt<br>
+                                    oder online via Zoom
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-euro-sign"></i>
+                                <div>
+                                    <strong>Investition:</strong><br>
+                                    Erstgespräch (30 Min.) kostenlos<br>
+                                    Einzelsitzung: 90 Euro<br>
+                                    5er-Paket: 400 Euro
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-info-circle"></i>
+                                <div>
+                                    <strong>Hinweis:</strong><br>
+                                    Terminvereinbarung flexibel nach<br>
+                                    Absprache
+                                </div>
+                            </li>
+                        </ul>
+                        <div style="text-align: center; margin-top: var(--spacing-md);">
+                            <a href="kontakt.html" class="btn">Kontakt aufnehmen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Häufig gestellte Fragen</h2>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Brauche ich Vorkenntnisse für die Teilnahme?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Nein, alle meine Angebote sind so konzipiert, dass keine Vorkenntnisse erforderlich sind.
+                            Sowohl Anfänger als auch Menschen mit Erfahrung in Meditation und Achtsamkeit sind
+                            willkommen.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Ist Achtsamkeit religiös oder spirituell?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Obwohl Achtsamkeit Wurzeln in buddhistischen Traditionen hat, werden meine Kurse in einem
+                            säkularen, nicht-religiösen Kontext angeboten. Die Übungen basieren auf wissenschaftlich
+                            untersuchten Methoden und können unabhängig von religiösen oder spirituellen Überzeugungen
+                            praktiziert werden.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Ist Achtsamkeitstraining bei psychischen Erkrankungen geeignet?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Achtsamkeitstraining kann bei vielen psychischen Beschwerden unterstützend wirken, ersetzt
+                            jedoch keine therapeutische Behandlung. Bei akuten psychischen Erkrankungen empfehle ich,
+                            vor der Teilnahme Rücksprache mit Ihrem behandelnden Arzt oder Therapeuten zu halten. In
+                            einem Vorgespräch klären wir gemeinsam, ob meine Angebote für Sie geeignet sind.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Wie viel Zeit sollte ich für die Übungen einplanen?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Für den MBSR-Kurs wird empfohlen, täglich etwa 30-45 Minuten für die formelle Praxis
+                            einzuplanen. Bei den Workshops und im Einzelcoaching können wir den Umfang der Übungspraxis
+                            flexibel an Ihre zeitlichen Möglichkeiten anpassen. Wichtig ist die Regelmäßigkeit – auch
+                            kurze, aber regelmäßige Übungszeiten können wirkungsvoll sein.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h4>Werden die Kosten von der Krankenkasse übernommen?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Viele Krankenkassen beteiligen sich an den Kosten für MBSR-Kurse im Rahmen ihrer
+                            Präventionsangebote. Ich stelle Ihnen gerne eine entsprechende Teilnahmebestätigung aus.
+                            Bitte erkundigen Sie sich vor Kursbeginn bei Ihrer Krankenkasse über die genauen
+                            Konditionen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Bereit für mehr Achtsamkeit?</h2>
+                <p>Nehmen Sie Kontakt mit mir auf. Ich berate Sie gerne bei der Auswahl des passenden Angebots.</p>
+            </div>
+            <div style="text-align: center;">
+                <a href="kontakt.html" class="btn">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Marilena Achtsamkeitstraining. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        // Accordion functionality for this page
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('active');
+
+                    // Toggle icon
+                    const icon = this.querySelector('i');
+                    if (content.classList.contains('active')) {
+                        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

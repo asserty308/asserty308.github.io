@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich | Marilena Achtsamkeitstraining</title>
+    <meta name="description"
+        content="Lernen Sie mich und meinen Weg zur Achtsamkeit kennen. Erfahren Sie mehr über meine Qualifikationen und Philosophie.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* Page-specific styles */
+        .timeline {
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: var(--spacing-lg) 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: var(--spacing-md) 0;
+            position: relative;
+        }
+
+        .timeline-content {
+            position: relative;
+            background-color: white;
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            width: calc(50% - 40px);
+            box-sizing: border-box;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            float: left;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            float: right;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -50px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -50px;
+        }
+
+        .timeline-year {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            text-align: center;
+            max-width: 800px;
+            margin: var(--spacing-xl) auto;
+            padding: var(--spacing-md);
+            border-left: 4px solid var(--secondary-color);
+            border-right: 4px solid var(--secondary-color);
+            background-color: var(--accent-color);
+            border-radius: 4px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 80px);
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                float: right;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content::after,
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Marilena</a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="ueber-mich.html" class="active">Über mich</a></li>
+                    <li><a href="angebote.html">Angebote</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Über mich</h1>
+            <p>Mein Weg zur Achtsamkeit und meine Philosophie</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/images/profile.svg" alt="Marilena - Achtsamkeitstrainerin">
+                </div>
+                <div class="about-content">
+                    <h2>Meine Geschichte</h2>
+                    <p>Herzlich willkommen! Mein Name ist Marilena und ich freue mich, dass Sie den Weg zu meiner Seite
+                        gefunden haben.</p>
+                    <p>Meine eigene Reise zur Achtsamkeit begann vor über 10 Jahren, als ich selbst unter beruflichem
+                        Stress und Burnout litt. Die Entdeckung der Achtsamkeitspraxis hat mein Leben nachhaltig
+                        verändert und mir geholfen, einen neuen Weg zu finden – einen Weg zu mehr innerer Ruhe, Klarheit
+                        und Lebensfreude.</p>
+                    <p>Diese transformative Erfahrung hat mich dazu inspiriert, mein Wissen und meine Erfahrungen mit
+                        anderen Menschen zu teilen. Nach intensiven Ausbildungen in MBSR (Mindfulness-Based Stress
+                        Reduction) und MSC (Mindful Self-Compassion) habe ich mich als Achtsamkeitstrainerin selbständig
+                        gemacht.</p>
+                    <p>Heute begleite ich Menschen auf ihrem individuellen Weg zu mehr Achtsamkeit und unterstütze sie
+                        dabei, in ihrem oft stressigen Alltag wieder zu sich selbst zu finden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meine Philosophie</h2>
+            </div>
+            <p>Achtsamkeit bedeutet für mich, dem gegenwärtigen Moment mit einer offenen, nicht-wertenden Haltung zu
+                begegnen. Es geht darum, uns selbst, andere Menschen und die Welt um uns herum bewusster wahrzunehmen
+                und anzunehmen.</p>
+            <p>In meiner Arbeit verbinde ich traditionelle Achtsamkeitspraktiken mit modernen wissenschaftlichen
+                Erkenntnissen. Dabei ist es mir wichtig, dass meine Angebote:</p>
+            <ul style="margin-bottom: var(--spacing-md); padding-left: var(--spacing-lg);">
+                <li>Alltagsnah und praktisch anwendbar sind</li>
+                <li>Wissenschaftlich fundiert sind</li>
+                <li>Individuell auf die Bedürfnisse der Teilnehmenden eingehen</li>
+                <li>In einem sicheren, wertschätzenden Rahmen stattfinden</li>
+                <li>Die Selbstfürsorge und den achtsamen Umgang mit sich selbst fördern</li>
+            </ul>
+            <p>Ich verstehe meine Rolle als Begleiterin auf einem Weg, den letztendlich jeder Mensch selbst gehen muss.
+                Mit achtsamer Präsenz, Empathie und Fachkompetenz unterstütze ich Sie dabei, Ihren eigenen Zugang zur
+                Achtsamkeit zu finden und zu vertiefen.</p>
+
+            <div class="quote">
+                "Achtsamkeit ist die Kunst, bewusst im Hier und Jetzt zu sein – mit allem, was ist."
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meine Qualifikationen</h2>
+            </div>
+            <div class="timeline">
+                <!-- Timeline items -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2015</span>
+                        <h3>Erste Begegnung mit Meditation</h3>
+                        <p>Teilnahme an einem 10-tägigen Vipassana-Retreat, das meine Leidenschaft für Achtsamkeit
+                            weckte.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2017</span>
+                        <h3>MBSR-Lehrerausbildung</h3>
+                        <p>Zertifizierte Ausbildung zur MBSR-Lehrerin (Mindfulness-Based Stress Reduction) nach dem
+                            Programm von Jon Kabat-Zinn.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2019</span>
+                        <h3>MSC-Training</h3>
+                        <p>Abschluss der Fortbildung in Mindful Self-Compassion (Achtsames Selbstmitgefühl) nach dem
+                            Programm von Kristin Neff und Christopher Germer.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020</span>
+                        <h3>Weiterbildung Traumasensitive Achtsamkeit</h3>
+                        <p>Spezialisierung auf traumasensitive Achtsamkeitspraxis, um auch Menschen mit traumatischen
+                            Erfahrungen sicher begleiten zu können.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">2022</span>
+                        <h3>Gründung der eigenen Praxis</h3>
+                        <p>Start meiner eigenen Praxis für Achtsamkeitstraining mit regelmäßigen Kursen, Workshops und
+                            Einzelcoachings.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-year">Heute</span>
+                        <h3>Kontinuierliche Weiterbildung</h3>
+                        <p>Regelmäßige Teilnahme an Retreats, Supervisionen und Fortbildungen, um meine eigene Praxis zu
+                            vertiefen und meine Angebote stetig weiterzuentwickeln.</p>
+                    </div>
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="section-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lernen Sie mich persönlich kennen</h2>
+                <p>Ich freue mich auf ein unverbindliches Kennenlerngespräch oder auf Ihre Teilnahme an einem meiner
+                    Kurse.</p>
+            </div>
+            <div style="text-align: center;">
+                <a href="kontakt.html" class="btn">Kontakt aufnehmen</a>
+                <a href="angebote.html" class="btn btn-outline" style="margin-left: var(--spacing-sm);">Meine
+                    Angebote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2025 Marilena Achtsamkeitstraining. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
